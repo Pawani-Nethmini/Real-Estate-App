@@ -2,6 +2,8 @@ import React, { useState } from "react"
 import "./header.css"
 import {Link} from "react-router-dom"
 import {nav} from "../../data/Data"
+import Logo from "../../public/images/logo.png";
+
 
 const Header = () => {
     const[navList, setNavList] = useState(false)
@@ -10,7 +12,7 @@ const Header = () => {
             <header>
                 <div className="container flex">
                     <div className="logo">
-                        <img src="./images/logo.png" alt="" />
+                        <img src="/images/logo.png" alt="Logo" />
                     </div>
                     <div className="nav">
                         <ul className={navList ? "small" : "flex"}>
@@ -34,8 +36,8 @@ const Header = () => {
                         <button onClick={() => setNavList(!navList)}>{navList ? <i className="fa fa-times"></i> : <i className="fa fa-bars"></i>}</button>
                     </div>
                 </div>
-            </header>
-        </>
+        </header>
+    </>
     )  
 }
 
