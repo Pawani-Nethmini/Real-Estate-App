@@ -1,5 +1,7 @@
 import React from "react"
+import "./header.css"
 import {Link} from "react-router-dom"
+import {nav} from "../../data/Data"
 
 const Header = () => {
     return(
@@ -26,11 +28,11 @@ const Header = () => {
                     </button>
                 </div>
 
-                {/*<div className="toggle">
+                <div className="toggle">
                     <button>
                         <i className="fa fa-bars"></i>
                     </button>
-                </div>*/}
+                </div>
             </div>
 
         </header>
