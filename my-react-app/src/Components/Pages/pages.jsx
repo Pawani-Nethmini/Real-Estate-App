@@ -1,18 +1,20 @@
-import Header from "../common/header/Header";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "../home/Home";
+
+import Header from "../common/header/Header";
 import Footer from "../common/footer/Footer";
+
+import Home from "../home/Home";
 import About from "../about/About";
-import Pricing from "../pricing/Pricing";
-import Blog from "../blog/Blog";
 import Services from "../services/Services";
+import Blog from "../blog/Blog";
+import Pricing from "../pricing/Pricing";
 import Contact from "../contact/Contact";
 
 const Pages = () => {
   return (
     <BrowserRouter>
       <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -21,7 +23,6 @@ const Pages = () => {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-
       <Footer />
     </BrowserRouter>
   );
